@@ -1,0 +1,19 @@
+:root {
+  --footer-back: #2f303a;
+  --page-color: #2196f3;
+  --white-back: #ffffff;
+  --black-color: #000000;
+  --navigation-black: #212121;
+  --connection-link-color: #757575;
+  --footer-style: #2f303a;
+  --border-header: #ececec;
+  --back-svg: #f5f4fa;
+  --icon-gray: #afb1b8;
+  --hero-gradient: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  );
+}
+
+@mixin name {
+}
