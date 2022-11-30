@@ -1,5 +1,4 @@
 .hero {
-  background: #2f303a;
   background-image: var(--hero-gradient), url(../image/Header-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -31,7 +30,16 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--hero-gradient), url(../image/Header-mob.jpg);
+    background-image: var(--hero-gradient), url(../image/Header-mob2x.jpg);
+    @media screen and (min-width: 480px) {
+      background-image: var(--hero-gradient), url(../image/Header-mob2x.jpg);
+    }
+    @media screen and (min-width: 768px) {
+      background-image: var(--hero-gradient), url(../image/Header-tablet2x.jpg);
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: var(--hero-gradient), url(../image/Header-desctop2x.jpg);
+    }
   }
 }
 .hero__header {
