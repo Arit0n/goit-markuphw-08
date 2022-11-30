@@ -251,8 +251,8 @@ img {
 
 .connection__link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--connection-link-color);
   display: flex;
@@ -263,6 +263,12 @@ img {
   color: var(--page-color);
   fill: var(--page-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .connection__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .connection__icons {
@@ -321,16 +327,14 @@ img {
   gap: 8px;
   margin-bottom: 40px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .portfolio__navigation {
+    justify-content: center;
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .portfolio__navigation {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
     margin-bottom: 50px;
   }
 }
@@ -601,11 +605,17 @@ img {
 .convenience__header {
   font-weight: 700;
   font-size: 14px;
+  text-align: center;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--navigation-black);
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .convenience__header {
+    text-align: start;
+  }
 }
 
 .convenience__text {
@@ -687,12 +697,18 @@ img {
 
 .team__header {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--navigation-black);
   text-align: center;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .team__header {
+    font-size: 36px;
+    line-height: 1.1;
+  }
 }
 
 .people {
@@ -790,13 +806,20 @@ img {
 
 .client__header {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--navigation-black);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   -webkit-text-stroke: 1px var(--black-color);
+}
+@media screen and (min-width: 1200px) {
+  .client__header {
+    font-size: 36px;
+    margin-bottom: 50px;
+    line-height: 1.1;
+  }
 }
 
 .client__list {
@@ -929,10 +952,16 @@ img {
   text-align: center;
   margin-top: 60px;
 }
+@media screen and (min-width: 768px) {
+  .footer-header-soc {
+    margin-top: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-header-soc {
     text-align: start;
     margin-top: 0;
+    margin-top: 60px;
   }
 }
 
@@ -1367,8 +1396,8 @@ label {
 
 .modal {
   position: absolute;
-  height: 609px;
-  width: 450px;
+  max-height: 100%;
+  max-width: 100%;
   background: var(--white-back);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;

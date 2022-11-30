@@ -38,11 +38,15 @@
 .convenience__header {
   font-weight: 700;
   font-size: 14px;
+  text-align: center;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--navigation-black);
   margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 .convenience__text {
   font-size: 14px;
