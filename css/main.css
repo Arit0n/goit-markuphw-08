@@ -488,7 +488,12 @@ img {
   padding-top: 118px;
   padding-bottom: 118px;
 }
-@media screen and (min-width: 480px) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: var(--hero-gradient), url(../image/Img.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 480px), screen and (min-resolution: 192dpi) and (min-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 480px) {
   .hero {
     background-image: var(--hero-gradient), url(../image/Header-mob.jpg);
     background-size: contain;
@@ -496,7 +501,7 @@ img {
     padding-bottom: 118px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
     background-image: var(--hero-gradient), url(../image/Header-tablet.jpg);
     padding-top: 118px;
@@ -504,7 +509,7 @@ img {
     background-size: contain;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
     background-image: var(--hero-gradient), url(../image/Img.jpg);
     padding-top: 200px;
@@ -513,11 +518,6 @@ img {
   }
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero {
-    background-image: var(--hero-gradient), url(../image/Img.jpg);
-  }
-}
 .hero__header {
   font-weight: 900;
   font-size: 26px;

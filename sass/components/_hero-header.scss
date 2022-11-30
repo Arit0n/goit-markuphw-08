@@ -7,33 +7,51 @@
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--hero-gradient), url(../image/Img.jpg);
+    }
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @media screen and (min-width: 480px) {
+      background-image: var(--hero-gradient), url(../image/Header-mob.jpg);
+      background-size: contain;
+      padding-top: 118px;
+      padding-bottom: 118px;
+    }
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @media screen and (min-width: 768px) {
+      background-image: var(--hero-gradient), url(../image/Header-tablet.jpg);
+      padding-top: 118px;
+      padding-bottom: 118px;
+      background-size: contain;
+    }
+  }
 
-  @media screen and (min-width: 480px) {
-    background-image: var(--hero-gradient), url(../image/Header-mob.jpg);
-    background-size: contain;
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
-  @media screen and (min-width: 768px) {
-    background-image: var(--hero-gradient), url(../image/Header-tablet.jpg);
-    padding-top: 118px;
-    padding-bottom: 118px;
-    background-size: contain;
-  }
-  @media screen and (min-width: 1200px) {
-    background-image: var(--hero-gradient), url(../image/Img.jpg);
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @media screen and (min-width: 1200px) {
+      background-image: var(--hero-gradient), url(../image/Img.jpg);
+      padding-top: 200px;
+      padding-bottom: 200px;
+      background-size: cover;
+    }
   }
 }
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: var(--hero-gradient), url(../image/Img.jpg);
-  }
-}
+// @media (min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//   .hero {
+//     background-image: var(--hero-gradient), url(../image/Img.jpg);
+//   }
 
 .hero__header {
   font-weight: 900;
