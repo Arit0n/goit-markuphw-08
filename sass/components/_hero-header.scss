@@ -7,13 +7,7 @@
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: var(--hero-gradient), url(../image/Header-mob.jpg);
-    }
-  }
+
   @media screen and (min-width: 480px) {
     background-image: var(--hero-gradient), url(../image/Header-mob.jpg);
     background-size: contain;
@@ -33,13 +27,13 @@
     background-size: cover;
   }
 }
-// @media (min-device-pixel-ratio: 2),
-//   (min-resolution: 192dpi),
-//   (min-resolution: 2dppx) {
-//   .hero {
-//     background-image: var(--hero-gradient), url(../image/Img.jpg);
-//   }
-
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--hero-gradient), url(../image/Header-mob.jpg);
+  }
+}
 .hero__header {
   font-weight: 900;
   font-size: 26px;

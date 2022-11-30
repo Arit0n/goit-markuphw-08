@@ -488,11 +488,6 @@ img {
   padding-top: 118px;
   padding-bottom: 118px;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero .hero {
-    background-image: var(--hero-gradient), url(../image/Header-mob.jpg);
-  }
-}
 @media screen and (min-width: 480px) {
   .hero {
     background-image: var(--hero-gradient), url(../image/Header-mob.jpg);
@@ -518,6 +513,11 @@ img {
   }
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--hero-gradient), url(../image/Header-mob.jpg);
+  }
+}
 .hero__header {
   font-weight: 900;
   font-size: 26px;
