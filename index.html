@@ -69,67 +69,80 @@
             >
           </li>
         </ul>
-        <button type="button" class="mob-menu__open" data-menu-open><svg class="mob-btn-open" width="24" height="16">
-      <use href="./image/icons.svg#icon-mob-menu-open"></use>
-    </svg></button>
+        <button type="button" class="mob-menu__open" data-menu-open>
+          <svg class="mob-btn-open" width="24" height="16">
+            <use href="./image/icons.svg#icon-mob-menu-open"></use>
+          </svg>
+        </button>
       </div>
-      
-    <div class="mob-menu__modal is-hidden" data-menu>
-      <button class="mob__modal-close">
-        <svg class="mob__close" width="40px" height="40px" data-menu-close>
-          <use href="./image/icons.svg#icon-mob-close"></use>
-        </svg>
-      </button>
-      <div>        <nav class="mob-navigation">
-          <ul class="mob-navigation__btn">
-            <li class="list-style">
-              <a class="link mob__navigation-link " href="./index.html"
-                >Студія</a
+
+      <div class="mob-menu__modal is-hidden" data-menu>
+        <button class="mob__modal-close">
+          <svg class="mob__close" width="40px" height="40px" data-menu-close>
+            <use href="./image/icons.svg#icon-mob-close"></use>
+          </svg>
+        </button>
+        <div>
+          <nav class="mob-navigation">
+            <ul class="mob-navigation__btn">
+              <li class="list-style">
+                <a class="link mob__navigation-link" href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="list-style">
+                <a class="link mob__navigation-link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="list-style">
+                <a class="link mob__navigation-link" href="#">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <ul class="mob__connection">
+            <li class="list-style mob__connection-item">
+              <a
+                class="link mob__connection-link-tel"
+                href="tel:+380961111111"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                +38 096 111 11 11</a
               >
             </li>
-            <li class="list-style">
-              <a class="link mob__navigation-link" href="./portfolio.html"
-                >Портфоліо</a
+            <li class="list-style mob__connection-item">
+              <a
+                class="link mob__connection-link-mail"
+                href="mailto:info@devstudio.com"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
               >
-            </li>
-            <li class="list-style">
-              <a class="link mob__navigation-link" href="#">Контакти</a>
+                info@devstudio.com</a
+              >
             </li>
           </ul>
-        </nav></div>
-<div><ul class="mob__connection">
-           <li class="list-style mob__connection-item">
-            <a
-              class="link mob__connection-link-tel"
-              href="tel:+380961111111"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >
-              +38 096 111 11 11</a
-            >
-          </li>
-          <li class="list-style mob__connection-item">
-            <a
-              class="link mob__connection-link-mail"
-              href="mailto:info@devstudio.com"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >
-              info@devstudio.com</a
-            >
-          </li>
-        </ul>
-        <ul class="mob__soc-list">
-          <li class="link mob__soc-item"><a class="mob__soc-link" href="" class="mob__soc">Instagram</a></li>
-          <li class="link mob__soc-item"><a class="mob__soc-link" href="" class="mob__soc">Twitter</a></li>
-          <li class="link mob__soc-item"><a class="mob__soc-link" href="" class="mob__soc">Facebook</a></li>
-          <li class="link mob__soc-item"><a class="mob__soc-link" href="" class="mob__soc">LinkedIn</a></li>
-        </ul></div>
-    </div>
+          <ul class="mob__soc-list">
+            <li class="link mob__soc-item">
+              <a class="mob__soc-link" href="#" class="mob__soc">Instagram</a>
+            </li>
+            <li class="link mob__soc-item">
+              <a class="mob__soc-link" href="#" class="mob__soc">Twitter</a>
+            </li>
+            <li class="link mob__soc-item">
+              <a class="mob__soc-link" href="#" class="mob__soc">Facebook</a>
+            </li>
+            <li class="link mob__soc-item">
+              <a class="mob__soc-link" href="#" class="mob__soc">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
-    </header> 
-   
-     <main>
+    <main>
       <section class="hero">
         <div class="container">
           <h1 class="hero__header">
@@ -637,7 +650,7 @@
         </div>
       </div>
     </footer>
-     <div class="modal-back is-hidden" data-modal>
+    <div class="modal-back is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="icon-modal" width="18" height="18">
@@ -646,69 +659,62 @@
         </button>
         <h2 class="form-header">Залиште свої дані, ми вам передзвонимо</h2>
         <form class="form" autocomplete="on">
-          <label for="name-input">
-            Ім'я
-            </label>
-            <div class="form-input-box">
-              <input
-                type="name"
-                name="name"
-                class="form-modal-input"
-                id="name-input"
-                required
-                minlength="5"
-                maxlength="20"
-              />
-              <svg class="input-icon" width="18" height="18">
-                <use href="./image/icons.svg#icon-name-icon-1"></use>
-              </svg>
-            </div>
-          
-          <label for="tel-input">
-            Телефон
-            </label>
-            <div class="form-input-box">
-              <input
-                type="tel"
-                name="tel"
-                class="form-modal-input"
-                id="tel-input"
-                required
-                minlength="8"
-                maxlength="12"
-              />
-              <svg class="input-icon" width="18" height="18">
-                <use href="./image/icons.svg#icon-tel-icon-1"></use>
-              </svg>
-            </div>
-          
-          <label for="email-input">
-            Пошта</label>
-            <div class="form-input-box">
-              <input
-                type="email"
-                name="email"
-                class="form-modal-input"
-                id="email-input"
-                required
-                minlength="5"
-                maxlength="20"
-              />
-              <svg class="input-icon" width="18" height="18">
-                <use href="./image/icons.svg#icon-mail-icon-1"></use>
-              </svg>
-            </div>
-          </label>
-          <label for="feedback-input">
-            Коментар</label>
-            <textarea
-              name="feedback"
-              placeholder="Введіть текст"
-              class="form-modal-input feedback-input"
-              id="feedback-input"
+          <label for="name-input"> Ім'я </label>
+          <div class="form-input-box">
+            <input
+              type="text"
+              name="name"
+              class="form-modal-input"
+              id="name-input"
               required
-            ></textarea>
-          
+              minlength="5"
+              maxlength="20"
+            />
+            <svg class="input-icon" width="18" height="18">
+              <use href="./image/icons.svg#icon-name-icon-1"></use>
+            </svg>
+          </div>
+
+          <label for="tel-input"> Телефон </label>
+          <div class="form-input-box">
+            <input
+              type="tel"
+              name="tel"
+              class="form-modal-input"
+              id="tel-input"
+              required
+              minlength="8"
+              maxlength="12"
+            />
+            <svg class="input-icon" width="18" height="18">
+              <use href="./image/icons.svg#icon-tel-icon-1"></use>
+            </svg>
+          </div>
+
+          <label for="email-input"> Пошта</label>
+          <div class="form-input-box">
+            <input
+              type="email"
+              name="email"
+              class="form-modal-input"
+              id="email-input"
+              required
+              minlength="5"
+              maxlength="20"
+            />
+            <svg class="input-icon" width="18" height="18">
+              <use href="./image/icons.svg#icon-mail-icon-1"></use>
+            </svg>
+          </div>
+          <label for="feedback-input"> Коментар</label>
+          <textarea
+            name="feedback"
+            placeholder="Введіть текст"
+            class="form-modal-input feedback-input"
+            id="feedback-input"
+            required
+          ></textarea>
+
           <div class="input-check">
             <input
               type="checkbox"
