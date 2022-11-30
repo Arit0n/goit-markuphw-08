@@ -1,6 +1,6 @@
 .hero {
   background: #2f303a;
-  background-image: var(--hero-gradient), url(/image/Img.jpg);
+  background-image: var(--hero-gradient), url(/image/Header-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -11,7 +11,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: var(--hero-gradient), url(../image/Img.jpg);
+      background-image: var(--hero-gradient), url(../image/Header-mob.jpg);
     }
   }
   @media screen and (min-width: 480px) {
