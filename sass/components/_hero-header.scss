@@ -9,14 +9,17 @@
 
   @media screen and (min-width: 480px) {
     background-image: var(--hero-gradient), url(../image/Header-mob.jpg);
+    background-size: cover;
   }
   @media screen and (min-width: 768px) {
     background-image: var(--hero-gradient), url(../image/Header-tablet.jpg);
+    background-size: cover;
   }
   @media screen and (min-width: 1200px) {
     background-image: var(--hero-gradient), url(../image/Img.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
+    background-size: cover;
   }
 }
 @media (min-device-pixel-ratio: 2),
@@ -26,12 +29,15 @@
     background-image: var(--hero-gradient), url(../image/Header-mob2x.jpg);
     @media screen and (min-width: 480px) {
       background-image: var(--hero-gradient), url(../image/Header-mob2x.jpg);
+      background-size: cover;
     }
     @media screen and (min-width: 768px) {
       background-image: var(--hero-gradient), url(../image/Header-tablet2x.jpg);
+      background-size: cover;
     }
     @media screen and (min-width: 1200px) {
       background-image: var(--hero-gradient), url(../image/header-desctop2x.jpg);
+      background-size: cover;
     }
   }
 }
