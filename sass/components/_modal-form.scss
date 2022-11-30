@@ -20,10 +20,6 @@ form {
     font-size: 20px;
     line-height: 1.5;
   }
-  @media screen and (min-width: 1200px) {
-    font-size: 20px;
-    line-height: 1.15;
-  }
 }
 label {
   display: block;
@@ -91,14 +87,6 @@ label {
   color: var(--connection-link-color);
   font-size: 12px;
   line-height: 1.2;
-  @media screen and (min-width: 480px) {
-    font-size: 12px;
-    line-height: 1.2;
-  }
-  @media screen and (min-width: 768px) {
-    font-size: 12px;
-    line-height: 1.2;
-  }
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;

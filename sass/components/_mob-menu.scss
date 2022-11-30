@@ -12,9 +12,6 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-  @media screen and (min-width: 1200px) {
-    display: none;
-  }
 }
 
 .mob-btn-open {
@@ -37,9 +34,6 @@
   z-index: 1;
   background-color: var(--white-back);
   @media screen and (min-width: 768px) {
-    display: none;
-  }
-  @media screen and (min-width: 1200px) {
     display: none;
   }
 }
