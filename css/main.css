@@ -45,6 +45,7 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  min-width: 100%;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -487,10 +488,34 @@ img {
   padding-top: 118px;
   padding-bottom: 118px;
 }
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: var(--hero-gradient), url(../image/Header-mob.jpg);
+    background-size: contain;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: var(--hero-gradient), url(../image/Header-tablet.jpg);
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-size: contain;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: var(--hero-gradient), url(../image/Img.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-size: cover;
+  }
+}
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--hero-gradient), url(/image/Img.jpg);
+    background-image: var(--hero-gradient), url(../image/Img.jpg);
   }
 }
 .hero__header {
@@ -875,6 +900,7 @@ img {
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -1019,8 +1045,8 @@ img {
 
 .subscribe__input-mail {
   height: 50px;
-  width: 450px;
   padding: 15px 16px;
+  width: 100%;
   margin-bottom: 20px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1028,6 +1054,11 @@ img {
   border-radius: 4px;
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .subscribe__input-mail {
+    max-width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .subscribe__input-mail {
