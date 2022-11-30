@@ -702,12 +702,13 @@ img {
   letter-spacing: 0.03em;
   color: var(--navigation-black);
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .team__header {
     font-size: 36px;
     line-height: 1.1;
+    margin-bottom: 50px;
   }
 }
 
